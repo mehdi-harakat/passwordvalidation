@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Password Validation</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- The Main Css File -->
+		<link rel="stylesheet" href="css/main.css" />
+
+		<!-- The Main JavaScript File -->
+		<script src="javascript/main.js" defer></script>
+
+    <!-- Fontawesome **Icons** File -->
+    <link rel="stylesheet" href="Font_Awesome/css/all.css">
+
+		<!-- Google Fonts **Anuphan** -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100;200;300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+
+	</head>
+
+	<body>
+    <div class="wrapper-container">
+      <div class="input-field">
+        <input type="password" placeholder="Your Password" id="mainInp">
+        <i class="fa-regular fa-eye"></i>
+      </div>
+      <div class="pass-info">
+        <h4>password should be :</h4>
+          <li class="info">
+            <i class="fa-solid "></i>
+            <p>at least 8 characters long</p>
+          </li>
+          <li class="info">
+            <i class="fa-solid "></i>
+            <p>at least 1 number (0...9)</p>
+          </li>
+          <li class="info">
+            <i class="fa-solid "></i>
+            <p>at least 1 lowercase letter (<span>a...z</span>)</p>
+          </li>
+          <li class="info">
+            <i class="fa-solid "></i>
+            <p>at least 1 uppercase letter (A...Z)</p>
+          </li>
+          <li class="info">
+            <i class="fa-solid "></i>
+            <p>at least 1 special symbol (!...$)</p>
+          </li>
+      </div>
+    </div>
+  </body>
+
+</html>

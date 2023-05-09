@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Anuphan', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-color: #4285f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.wrapper-container {
+  width:60vmin;
+  height: 70vmin;
+  background-color: white;
+  border-radius: 6px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.wrapper-container .input-field {
+  position: relative;
+  margin: 25px auto;
+}
+
+.wrapper-container .input-field #mainInp {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border: 1px solid #b0ceff;
+  padding: 10px 15px;
+}
+
+.wrapper-container .input-field #mainInp:focus {
+  outline: none;
+}
+
+input[type=password]::-ms-reveal,
+input[type=password]::-ms-clear
+{
+  display: none;
+}
+
+.wrapper-container .input-field i{
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #999;
+  cursor: pointer;
+}
+
+.wrapper-container .pass-info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: calc(100% - 140px);
+}
+
+.wrapper-container .pass-info h4 {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+
+.wrapper-container .pass-info .info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.wrapper-container .pass-info .info p {
+  font: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.wrapper-container .pass-info .info p span {
+  text-transform: lowercase;
+}
+
+.wrapper-container .pass-info .info p.done {
+  color: #999;
+  font-weight: 300;
+}
+
+.wrapper-container .pass-info .info i.fa-check {
+  font-size: 16px;
+  color: #1ABC9C;
+}
+.wrapper-container .pass-info .info i.fa-xmark {
+  font-size: 16px;
+  color: #CB4335;
+}
